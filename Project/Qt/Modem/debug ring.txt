@@ -1,0 +1,59 @@
+
+
+RING
+
+
+
++CLIP: "08199268744",129,"",,"",0
+
+
+
+RING
+
+
+
++CLIP: "08199268744",129,"",,"",0
+
+
+
+RING
+
+
+
++CLIP: "08199268744",129,"",,"",0
+
+
+
+RING
+
+
+
++CLIP: "08199268744",129,"",,"",0
+
+
+
+RING
+
+
+
++CLIP: "08199268744",129,"",,"",0
+
+
+
+NO CARRIER
+
+^`RING^`^`+CLIP: "08199268744",129,"",,"",0^`^`RING^`^`+CLIP: "08199268744",129,"",,"",0^`^`RING^`^`+CLIP: "08199268744",129,"",,"",0^`^`RING^`^`+CLIP: "08199268744",129,"",,"",0^`^`NO CARRIER^`
+
+
+^`RING^`^`+CLIP: "08199268744",129,"",,"",0^`^`RING^`^`+CLIP: "08199268744",129,"",,"",0^`^`RING^`^`+CLIP: "08199268744",129,"",,"",0^`^`RING^`^`+CLIP: "08199268744",129,"",,"",0^`^`NO CARRIER^`+CCLK: "14/01/03,23:21:40-12"^`+CCLK: "14/01/03,23:21:40-12"^`+CCLK: "14/01/03,23:21:40-12"^`+CCLK: "14/01/03,23:21:40-12"^`+CCLK: "14/01/03,23:21:40-12"^`
+
++CSQ: 21,0^`+CSQ: 21,0^`+CSQ: 21,0^`+CSQ: 21,0^`+CSQ: 21,0^`
+
++CMTI: "SM",19^`+CMTI: "SM",19^`+CMTI: "SM",19^`+CMTI: "SM",19^`
+
++CLCC: 1,0,2,0,0,"0742781722",129^`+CLCC: 1,0,2,0,0,"0742781722",129^`+CLCC: 1,0,2,0,0,"0742781722",129^`+CLCC: 1,0,2,0,0,"0742781722",129^`
+
+
+
+
+AT+CMGL="ALL"^`^`+CMGL: 1,"REC READ","+550310006052","","14/10/10,11:16:00-12"^`Parabens, voce esta cadastrado na Oferta Oi Controle Sem Fatura.Lembre-se de pagar em dia a fatura do seu cartao de credito para garantir seu bonus. Aproveite.^`^`+CMGL: 2,"REC READ","+550310006052","","14/10/10,11:23:00-12"^`Oi, seu saldo e de R$ 9,37 para Ligacoes Locais Oi e Fixo com data de validade ate 09/11/2014.^`^`+CMGL: 3,"REC READ","+550310006052","","14/10/10,11:23:00-12"^`Voce realizou pagamento da franquia de R$0,00 no mes anterior e de R$0,00 no mes atual.^`^`+CMGL: 4,"REC READ","+550310006052","","14/10/10,11:19:00-12"^`Nao foi possivel contratar o Pacote de Internet. Eh preciso ter saldo de R$9,90. Saldo atual: R$0,00. Recarregue mais R$10,00 e tente novamente.^`^`+CMGL: 5,"REC READ","+550310006052","","14/10/10,11:19:00-12"^`Nao foi possivel contratar o Pacote de Internet. Eh preciso ter saldo de R$9,90. Saldo atual: R$0,00. Recarregue mais R$10,00 e tente novamente.^`^`+CMGL: 6,"REC READ","+550310006052","","14/10/10,11:19:00-12"^`Nao foi possivel contratar o Pacote de Internet. Eh preciso ter saldo de R$9,90. Saldo atual: R$0,00. Recarregue mais R$10,00 e tente novamente.^`^`+CMGL: 7,"REC READ","+550310006052","","14/10/10,11:21:00-12"^`Nao foi possivel contratar o Pacote de Internet. Eh preciso ter saldo de R$9,90. Saldo atual: R$0,00. Recarregue mais R$10,00 e tente novamente.^`^`+CMGL: 8,"REC READ","+550310006052","","14/10/10,11:33:00-12"^`Nao foi possivel contratar o Pacote de Internet. Eh preciso ter saldo de R$9,90. Saldo atual: R$0,00. Recarregue mais R$10,00 e tente novamente.^`^`+CMGL: 9,"REC READ","+550310006052","","14/10/10,11:41:00-12"^`Nao foi possivel contratar o Pacote de Internet. Eh preciso ter saldo de R$9,90. Saldo atual: R$0,00. Recarregue mais R$10,00 e tente novamente.^`^`+CMGL: 10,"REC READ","+550310006052","","14/10/10,11:46:00-12"^`Voce assinou o pacote de 100 MB de internet (R$9,90)validos ate 09/11/14. Sua assinatura sera renovada automaticamente a cada 30 dias. Pra cancelar ligue *880.^`^`+CMGL: 11,"REC UNREAD","+558199268744","","14/10/10,12:07:22-12"^`ola^`^`+CMGL: 12,"REC UNREAD","+558199268744","","14/10/10,13:13:10-12"^`ola^`^`+CMGL: 13,"REC UNREAD","+558199268744","","14/10/10,14:29:40-12"^`ola^`^`+CMGL: 14,"REC UNREAD","+558199268744","","14/10/10,14:30:32-12"^`ola^`^`+CMGL: 15,"REC UNREAD","OI LIGOU","","14/10/10,18:41:04-12"^`Seu Oi recebeu ligacoes de:`08199268744`10/10 18:41 <1>`Ligue gratis agora para *100, recarregue seu celular e conheca servicos da Oi.^`^`+CMGL: 16,"REC UNREAD","+300","","14/10/10,19:12:13-12"^`8183317942 Com 1 SMS vc pode ganhar 1.000.000 de REAIS! Responda SIM, assine o teste de conhecimento e concorra! RS2,80/semana www.oi.com.br/sortenamao^`^`OK^`

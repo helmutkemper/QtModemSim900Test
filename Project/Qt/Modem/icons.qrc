@@ -1,0 +1,7 @@
+<RCC>
+    <qresource prefix="/icons">
+        <file>icons/appbar.connect.png</file>
+        <file>icons/appbar.cursor.information.png</file>
+        <file>icons/appbar.stop.png</file>
+    </qresource>
+</RCC>

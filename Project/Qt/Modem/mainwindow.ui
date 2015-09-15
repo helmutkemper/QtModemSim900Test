@@ -1,0 +1,829 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>576</width>
+    <height>550</height>
+   </rect>
+  </property>
+  <property name="sizePolicy">
+   <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+    <horstretch>0</horstretch>
+    <verstretch>0</verstretch>
+   </sizepolicy>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>576</width>
+    <height>550</height>
+   </size>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>576</width>
+    <height>550</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>AtModem Class Test</string>
+  </property>
+  <widget class="QWidget" name="centralWidget">
+   <widget class="QLabel" name="lbDadoEnviado">
+    <property name="geometry">
+     <rect>
+      <x>12</x>
+      <y>4</y>
+      <width>96</width>
+      <height>13</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Dado a ser enviado:</string>
+    </property>
+   </widget>
+   <widget class="QTextEdit" name="teSerialTx">
+    <property name="geometry">
+     <rect>
+      <x>8</x>
+      <y>20</y>
+      <width>560</width>
+      <height>188</height>
+     </rect>
+    </property>
+    <property name="inputMethodHints">
+     <set>Qt::ImhMultiLine|Qt::ImhUppercaseOnly</set>
+    </property>
+    <property name="textInteractionFlags">
+     <set>Qt::TextSelectableByKeyboard|Qt::TextSelectableByMouse</set>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pbSend">
+    <property name="geometry">
+     <rect>
+      <x>492</x>
+      <y>456</y>
+      <width>76</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Enviar</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="btClear">
+    <property name="geometry">
+     <rect>
+      <x>416</x>
+      <y>484</y>
+      <width>75</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Limpar</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="lbStatus">
+    <property name="geometry">
+     <rect>
+      <x>12</x>
+      <y>212</y>
+      <width>36</width>
+      <height>13</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Status:</string>
+    </property>
+   </widget>
+   <widget class="QTextEdit" name="teStatus">
+    <property name="geometry">
+     <rect>
+      <x>8</x>
+      <y>228</y>
+      <width>560</width>
+      <height>88</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pbDebug">
+    <property name="geometry">
+     <rect>
+      <x>492</x>
+      <y>484</y>
+      <width>75</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Debug</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="leUrl">
+    <property name="geometry">
+     <rect>
+      <x>8</x>
+      <y>336</y>
+      <width>128</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>www.kemper.com.br</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="lbHost">
+    <property name="geometry">
+     <rect>
+      <x>12</x>
+      <y>320</y>
+      <width>28</width>
+      <height>13</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Host:</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="lbPort">
+    <property name="geometry">
+     <rect>
+      <x>444</x>
+      <y>320</y>
+      <width>32</width>
+      <height>13</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Porta:</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="lePorta">
+    <property name="geometry">
+     <rect>
+      <x>440</x>
+      <y>336</y>
+      <width>128</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>80</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="lbQueryString">
+    <property name="geometry">
+     <rect>
+      <x>300</x>
+      <y>320</y>
+      <width>64</width>
+      <height>13</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Query String:</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="leQueryString">
+    <property name="geometry">
+     <rect>
+      <x>296</x>
+      <y>336</y>
+      <width>128</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>?id=1</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="lbOperadoraId">
+    <property name="geometry">
+     <rect>
+      <x>12</x>
+      <y>360</y>
+      <width>72</width>
+      <height>13</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Operadora ID:</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="lbOperadoraPassword">
+    <property name="geometry">
+     <rect>
+      <x>156</x>
+      <y>360</y>
+      <width>108</width>
+      <height>13</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Operadora Password:</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="UserName">
+    <property name="geometry">
+     <rect>
+      <x>300</x>
+      <y>360</y>
+      <width>60</width>
+      <height>13</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>User Name:</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="lbUserPassword">
+    <property name="geometry">
+     <rect>
+      <x>444</x>
+      <y>360</y>
+      <width>76</width>
+      <height>13</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>User Password:</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="leOperadoraId">
+    <property name="geometry">
+     <rect>
+      <x>8</x>
+      <y>376</y>
+      <width>128</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>gprs.oi.br</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="leOperadoraPassword">
+    <property name="geometry">
+     <rect>
+      <x>152</x>
+      <y>376</y>
+      <width>128</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>gprs.oi.br</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="leUserName">
+    <property name="geometry">
+     <rect>
+      <x>296</x>
+      <y>376</y>
+      <width>128</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>oi</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="leUserPassword">
+    <property name="geometry">
+     <rect>
+      <x>440</x>
+      <y>376</y>
+      <width>128</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>oi</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="lbSmsId">
+    <property name="geometry">
+     <rect>
+      <x>12</x>
+      <y>400</y>
+      <width>48</width>
+      <height>13</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Id SMS:</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="lbSmsTexto">
+    <property name="geometry">
+     <rect>
+      <x>300</x>
+      <y>400</y>
+      <width>96</width>
+      <height>13</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Texto SMS/Agenda:</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="leSmsId">
+    <property name="geometry">
+     <rect>
+      <x>8</x>
+      <y>416</y>
+      <width>128</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>2</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="leSmsTexto">
+    <property name="geometry">
+     <rect>
+      <x>296</x>
+      <y>416</y>
+      <width>128</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>+ROOT: DESABLE</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="leSmsTelefone">
+    <property name="geometry">
+     <rect>
+      <x>152</x>
+      <y>416</y>
+      <width>128</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>83317942</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="lbSmsTelefone">
+    <property name="geometry">
+     <rect>
+      <x>156</x>
+      <y>400</y>
+      <width>136</width>
+      <height>13</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Telefone SMS/Ligar/Agenda:</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="lbHost_2">
+    <property name="geometry">
+     <rect>
+      <x>156</x>
+      <y>320</y>
+      <width>28</width>
+      <height>13</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Site:</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="leSite">
+    <property name="geometry">
+     <rect>
+      <x>152</x>
+      <y>336</y>
+      <width>128</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>/modem.php</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="lePin">
+    <property name="geometry">
+     <rect>
+      <x>440</x>
+      <y>416</y>
+      <width>60</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>1234</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="lbPin">
+    <property name="geometry">
+     <rect>
+      <x>444</x>
+      <y>400</y>
+      <width>20</width>
+      <height>13</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>PIN:</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="lbSmsId_2">
+    <property name="geometry">
+     <rect>
+      <x>12</x>
+      <y>440</y>
+      <width>108</width>
+      <height>13</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Enviar para o modem:</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="leSend">
+    <property name="geometry">
+     <rect>
+      <x>8</x>
+      <y>456</y>
+      <width>480</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="lePinNew">
+    <property name="geometry">
+     <rect>
+      <x>508</x>
+      <y>416</y>
+      <width>60</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>5678</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="lbPinNew">
+    <property name="geometry">
+     <rect>
+      <x>512</x>
+      <y>400</y>
+      <width>48</width>
+      <height>13</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Novo PIN:</string>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menuBar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>576</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menuArquivo">
+    <property name="title">
+     <string>Arquivo</string>
+    </property>
+    <addaction name="actionSair"/>
+   </widget>
+   <widget class="QMenu" name="menuSerial">
+    <property name="title">
+     <string>Periféricos</string>
+    </property>
+    <addaction name="actionSerial"/>
+   </widget>
+   <widget class="QMenu" name="menuAjuda">
+    <property name="title">
+     <string>Ajuda</string>
+    </property>
+    <addaction name="actionSobre"/>
+   </widget>
+   <widget class="QMenu" name="menuComandos">
+    <property name="title">
+     <string>Funções do modem</string>
+    </property>
+    <widget class="QMenu" name="menuChip_SIM">
+     <property name="title">
+      <string>Chip SIM</string>
+     </property>
+     <addaction name="actionGet_SIM_Status"/>
+     <addaction name="actionEnter_PIN"/>
+     <addaction name="actionChange_PIN"/>
+     <addaction name="actionLock"/>
+     <addaction name="actionPIN_Unlock"/>
+    </widget>
+    <widget class="QMenu" name="menuInternet">
+     <property name="title">
+      <string>Internet</string>
+     </property>
+     <addaction name="actionUse_GET_method_to_connect_a_host"/>
+     <addaction name="actionGet_GEO_data_GPS_Less"/>
+     <addaction name="actionDisconnect"/>
+    </widget>
+    <widget class="QMenu" name="menuSMS">
+     <property name="title">
+      <string>SMS</string>
+     </property>
+     <addaction name="actionSend"/>
+     <addaction name="actionRead_by_id"/>
+     <addaction name="actionRead_and_delete_by_id"/>
+     <addaction name="actionRead_by_status_ALL"/>
+     <addaction name="actionRead_by_status_REC_READ"/>
+     <addaction name="actionRead_by_status_REC_UNREAD"/>
+     <addaction name="actionRead_by_status_STO_SEND"/>
+     <addaction name="actionRead_by_status_STO_UNSENT"/>
+     <addaction name="actionDelete_by_id"/>
+     <addaction name="actionDelete_by_status_DEL_READ"/>
+     <addaction name="actionDelete_by_status_DEL_UNREAD"/>
+     <addaction name="actionDelete_by_status_DEL_SENT"/>
+     <addaction name="actionDelete_by_status_DEL_UNSENT"/>
+     <addaction name="actionDelete_by_status_DEL_INBOX"/>
+     <addaction name="actionDelete_by_status_DEL_ALL"/>
+    </widget>
+    <widget class="QMenu" name="menuGeneric_commands">
+     <property name="title">
+      <string>Comandos genéricos</string>
+     </property>
+     <addaction name="actionEcho_ON"/>
+     <addaction name="actionEcho_OFF"/>
+     <addaction name="actionPower_OFF"/>
+     <addaction name="actionGet_signal_quality"/>
+    </widget>
+    <widget class="QMenu" name="menuCall">
+     <property name="title">
+      <string>Ligação</string>
+     </property>
+     <addaction name="actionGet_Number"/>
+     <addaction name="actionCall_Number"/>
+     <addaction name="actionHang_Up"/>
+     <addaction name="actionAnswering"/>
+    </widget>
+    <widget class="QMenu" name="menuRTC">
+     <property name="title">
+      <string>RTC</string>
+     </property>
+     <addaction name="actionRead"/>
+     <addaction name="actionSet"/>
+    </widget>
+    <widget class="QMenu" name="menuPhone_Book">
+     <property name="title">
+      <string>Agenda</string>
+     </property>
+     <addaction name="actionAgenda_Adicionar"/>
+     <addaction name="actionAgenda_Adicionar_com_Id"/>
+     <addaction name="actionAgenda_Apagar_com_Id"/>
+     <addaction name="actionAgenda_Procurar"/>
+    </widget>
+    <addaction name="menuChip_SIM"/>
+    <addaction name="menuCall"/>
+    <addaction name="menuInternet"/>
+    <addaction name="menuSMS"/>
+    <addaction name="menuRTC"/>
+    <addaction name="menuGeneric_commands"/>
+    <addaction name="menuPhone_Book"/>
+   </widget>
+   <addaction name="menuArquivo"/>
+   <addaction name="menuSerial"/>
+   <addaction name="menuComandos"/>
+   <addaction name="menuAjuda"/>
+  </widget>
+  <widget class="QStatusBar" name="statusBar"/>
+  <action name="actionSair">
+   <property name="icon">
+    <iconset resource="icons.qrc">
+     <normaloff>:/icons/icons/appbar.stop.png</normaloff>:/icons/icons/appbar.stop.png</iconset>
+   </property>
+   <property name="text">
+    <string>Sair</string>
+   </property>
+  </action>
+  <action name="actionSerial">
+   <property name="icon">
+    <iconset resource="icons.qrc">
+     <normaloff>:/icons/icons/appbar.connect.png</normaloff>:/icons/icons/appbar.connect.png</iconset>
+   </property>
+   <property name="text">
+    <string>Serial</string>
+   </property>
+  </action>
+  <action name="actionSobre">
+   <property name="icon">
+    <iconset resource="icons.qrc">
+     <normaloff>:/icons/icons/appbar.cursor.information.png</normaloff>:/icons/icons/appbar.cursor.information.png</iconset>
+   </property>
+   <property name="text">
+    <string>Sobre</string>
+   </property>
+  </action>
+  <action name="actionGet_SIM_Status">
+   <property name="text">
+    <string>SIM - Ler Status</string>
+   </property>
+  </action>
+  <action name="actionEnter_PIN">
+   <property name="text">
+    <string>SIM - Enviar PIN</string>
+   </property>
+  </action>
+  <action name="actionChange_PIN">
+   <property name="text">
+    <string>SIM - Trocar PIN</string>
+   </property>
+  </action>
+  <action name="actionLock">
+   <property name="text">
+    <string>SIM - Ativar senha PIN</string>
+   </property>
+  </action>
+  <action name="actionPIN_Unlock">
+   <property name="text">
+    <string>SIM - Desativar senha PIN</string>
+   </property>
+  </action>
+  <action name="actionUse_GET_method_to_connect_a_host">
+   <property name="text">
+    <string>Internet - Enviar dados via GET</string>
+   </property>
+  </action>
+  <action name="actionDisconnect">
+   <property name="text">
+    <string>Internet - Desconectar</string>
+   </property>
+  </action>
+  <action name="actionSend">
+   <property name="text">
+    <string>SMS - Enviar</string>
+   </property>
+  </action>
+  <action name="actionRead_by_id">
+   <property name="text">
+    <string>SMS - Ler por Id</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+Shift+R</string>
+   </property>
+  </action>
+  <action name="actionDelete_by_id">
+   <property name="text">
+    <string>SMS - Apagar por Id</string>
+   </property>
+  </action>
+  <action name="actionRead_and_delete_by_id">
+   <property name="text">
+    <string>SMS - Ler e apagar por Id</string>
+   </property>
+  </action>
+  <action name="actionEcho_ON">
+   <property name="text">
+    <string>Echo - Ligar</string>
+   </property>
+  </action>
+  <action name="actionEcho_OFF">
+   <property name="text">
+    <string>Echo - Desligar</string>
+   </property>
+  </action>
+  <action name="actionPower_OFF">
+   <property name="text">
+    <string>Power - Desligar</string>
+   </property>
+  </action>
+  <action name="actionGet_signal_quality">
+   <property name="text">
+    <string>Sinal - Medir</string>
+   </property>
+  </action>
+  <action name="actionDelete_by_status_DEL_READ">
+   <property name="text">
+    <string>SMS - Apagar por status: DEL READ</string>
+   </property>
+  </action>
+  <action name="actionDelete_by_status_DEL_UNREAD">
+   <property name="text">
+    <string>SMS - Apagar por status: DEL UNREAD</string>
+   </property>
+  </action>
+  <action name="actionDelete_by_status_DEL_SENT">
+   <property name="text">
+    <string>SMS - Apagar por status: DEL SENT</string>
+   </property>
+  </action>
+  <action name="actionDelete_by_status_DEL_UNSENT">
+   <property name="text">
+    <string>SMS - Apagar por status: DEL UNSENT</string>
+   </property>
+  </action>
+  <action name="actionDelete_by_status_DEL_INBOX">
+   <property name="text">
+    <string>SMS - Apagar por status: DEL INBOX</string>
+   </property>
+  </action>
+  <action name="actionDelete_by_status_DEL_ALL">
+   <property name="text">
+    <string>SMS - Apagar por status: DEL ALL</string>
+   </property>
+  </action>
+  <action name="actionRead_by_status_ALL">
+   <property name="text">
+    <string>SMS - Ler por status: ALL</string>
+   </property>
+  </action>
+  <action name="actionRead_by_status_REC_READ">
+   <property name="text">
+    <string>SMS - Ler por status: REC READ</string>
+   </property>
+  </action>
+  <action name="actionRead_by_status_REC_UNREAD">
+   <property name="text">
+    <string>SMS - Ler por status: REC UNREAD</string>
+   </property>
+  </action>
+  <action name="actionRead_by_status_STO_SEND">
+   <property name="text">
+    <string>SMS - Ler por status: STO SENT</string>
+   </property>
+  </action>
+  <action name="actionRead_by_status_STO_UNSENT">
+   <property name="text">
+    <string>SMS - Ler por status: STO UNSENT</string>
+   </property>
+  </action>
+  <action name="actionGet_Number">
+   <property name="text">
+    <string>Ligação - Número do chamador</string>
+   </property>
+  </action>
+  <action name="actionCall_Number">
+   <property name="text">
+    <string>Licação - Ligar</string>
+   </property>
+  </action>
+  <action name="actionHang_Up">
+   <property name="text">
+    <string>Ligação - Desligar</string>
+   </property>
+  </action>
+  <action name="actionAnswering">
+   <property name="text">
+    <string>Ligação - Atender</string>
+   </property>
+  </action>
+  <action name="actionRead">
+   <property name="text">
+    <string>Read RTC</string>
+   </property>
+  </action>
+  <action name="actionSet">
+   <property name="text">
+    <string>Set RTC</string>
+   </property>
+  </action>
+  <action name="actionGet_GEO_data_GPS_Less">
+   <property name="text">
+    <string>Internet - Localizar modem ( SEM GPS )</string>
+   </property>
+  </action>
+  <action name="actionAgenda_Adicionar">
+   <property name="text">
+    <string>Agenda - Adicionar</string>
+   </property>
+  </action>
+  <action name="actionAgenda_Adicionar_com_Id">
+   <property name="text">
+    <string>Agenda - Adicionar com Id</string>
+   </property>
+  </action>
+  <action name="actionAgenda_Apagar_com_Id">
+   <property name="text">
+    <string>Agenda - Apagar com Id</string>
+   </property>
+  </action>
+  <action name="actionAgenda_Procurar">
+   <property name="text">
+    <string>Agenda - Procurar</string>
+   </property>
+  </action>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <resources>
+  <include location="icons.qrc"/>
+ </resources>
+ <connections/>
+</ui>
