@@ -1,5 +1,7 @@
 # QtModemSim900Test
 
+Wiki: https://github.com/helmutkemper/Cplusplus/wiki/Modem-SIM900-...--Teste
+
 Na época que eu dava aula de Arduino, meus alunos tinham a necessidade de usar um modem GPRS para pequenos projetos, de forma transparente e clara, por isto, eu fiz a classe **AtModem** em **C++** para eles. Porém, como todo código necessita ser testado, o **Qt** é uma excelente plataforma gratuita para teste em **C++** e este é o código de teste da classe.
 
 Perceba que este código foi feito apenas para teste e não havia a necessidade de um código sustentável, por isto, o mesmo é meio desorganizado.
